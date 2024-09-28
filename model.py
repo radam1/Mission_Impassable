@@ -4,8 +4,4 @@ This file contains the model architecture for processing visual input into the s
 """
 import torch 
 
-
-print(torch.backends.mps.is_available())  # Should return True on M2 Max
-
-# Check if PyTorch can use the MPS (Metal Performance Shaders) backend
-print(torch.backends.mps.is_built())
+class 
