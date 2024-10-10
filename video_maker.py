@@ -61,4 +61,6 @@ def h5_to_video(h5, output_dir, fps):
 
     clip = ImageSequenceClip(frames, fps=fps)
     clip.write_videofile(str(output_dir / f"{h5.stem}.mp4"), codec="libx264")
-h5_to_video(Path("../Datasets/autonomous_flight-01a-ellipse.h5"), Path('.'), 30)
+    
+print(type(Path("")))
+h5_to_video(Path("../Datasets/autonomous_flight-01a-ellipse.h5"), Path("../Datasets"), 30)
